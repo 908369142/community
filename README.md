@@ -8,7 +8,7 @@
 [快捷键](alt+鼠标左键向下拉可以多行输入，shift+方向键选中，ctrl+方向键到左边或者右边,ctrl+shift+方向键功能同时使用)
 [远端文件不一致](git pull获得远端文件 esc shift+:x退出并保存再git push)
 
-## 脚本
+## sql语句
 ```sql
 create table USER
 (
@@ -21,4 +21,9 @@ create table USER
     constraint USER_PK
         primary key (ID)
 );
+```
+
+## 使用flyway低成本追加字段
+```bash
+mvn flyway:migrate
 ```
